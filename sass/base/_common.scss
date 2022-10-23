@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.section {
+    padding-top: var(--typical-section-padding);
+    padding-bottom: var(--typical-section-padding);
+    margin: 0 auto;
+}

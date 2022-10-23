@@ -1,0 +1,52 @@
+.benefits {
+    background-color: var(--primary-white-color);
+}
+
+.benefits__list {
+    display: flex;
+    align-items: top;
+    gap: var(--typical-list-padding);
+    /* margin-right: 30px; */
+    /* padding-top: 94px;
+    padding-bottom: 94px; */
+}
+
+/* .benefits-item:not(:last-child), 
+.work-item:not(:last-child),
+.team-item:not(:last-child) {
+    margin-right: 30px;
+} */
+
+.benefits__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: var(--primary-text-color);
+}
+
+.benefits__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.benefits__item {}
+
+.benefits__wrap {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-third-color);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.benefits__icon {
+    transition: fill var(--transition-animation);
+}
+
