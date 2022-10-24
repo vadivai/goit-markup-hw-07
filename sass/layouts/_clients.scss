@@ -1,14 +1,12 @@
 .clients__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    @include font(700, 36px, 1.17, null);
     text-align: center;
     padding-bottom: 50px;
 }
 
 .clients__list {
     display: flex;
-    gap: var(--typical-list-padding);
+    gap: var(--typical-padding-list);
 }
 
 .clients__item {
@@ -27,21 +25,20 @@
     border-radius: 4px;
    
     fill: #afb1b8;
-    transition: border-color var(--transition-animation),
-        fill var(--transition-animation);
+    transition: border-color var(--typical-transition), fill var(--typical-transition);
+
+
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+            fill: var(--accent-color);
+        }
+    
+    &:hover,
+    &:focus {
+            border-color: var(--accent-color);
+        }
 }
 
 .clients__icon {
-    transition: color var(--transition-animation);
-}
-
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-    fill: var(--accent-color);
-    // transition: fill var(--transition-animation);
-}
-
-.clients__link:hover,
-.clients__link:focus {
-    border-color: var(--accent-color);
+    transition: color var(--typical-transition);
 }

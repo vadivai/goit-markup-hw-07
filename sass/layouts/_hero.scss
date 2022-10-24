@@ -4,28 +4,14 @@
     text-align: center;
 
     background-color: #c4c4c4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../images/Img_overlay.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img_overlay.jpg");
+
+    &__title {
+        width: 696px;
+        margin: 0 auto;
+        @include font(900, 44px, 1.36, 0.06em);
+        text-transform: uppercase;
+        color: var(--primary-color-white);
+    }
 }
 
-.hero__title {
-    width: 696px;
-    color: var(--primary-white-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin: 0 auto;
-}
-
-.hero .hero__button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}

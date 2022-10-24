@@ -42,7 +42,7 @@ img {
 }
 
 .link {
-  color: var(--primary-text-color);
+  color: var(--text-color-primary);
   text-decoration: none;
 }
 
@@ -61,21 +61,21 @@ img {
 }
 
 :root {
-  --primary-text-color: #212121;
+  --text-color-primary: #212121;
   --text-color: #757575;
   --accent-color: #2196f3;
-  --primary-white-color: #ffffff;
+  --primary-color-white: #ffffff;
   --background-color-secondary: #f5f5f5;
-  --background-third-color: #f5f4fa;
-  --background-grey-color: #2f303a;
+  --background-color-third: #f5f4fa;
+  --background-color-grey: #2f303a;
   --typical-section-padding: 94px;
-  --typical-list-padding: 30px;
-  --transition-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --typical-padding-list: 30px;
+  --typical-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
+  color: var(--text-color-primary);
+  background-color: var(--primary-color-white);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -143,13 +143,13 @@ body {
   letter-spacing: 0.02em;
   padding: 32px 0;
   display: block;
-  color: var(--primary-text-color);
+  color: var(--text-color-primary);
   position: relative;
-  transition: color var(--transition-animation);
+  transition: color var(--typical-transition);
 }
 
 /* .nav-list a {
-  color: var(--primary-text-color);
+  color: var(--text-color-primary);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -202,11 +202,11 @@ body {
   column-gap: 10px;
   fill: #757575;
   padding: 20px 0;
-  transition: color var(--transition-animation);
+  transition: color var(--typical-transition);
 }
 
 .contacts-icon {
-  transition: fill var(--transition-animation);
+  transition: fill var(--typical-transition);
 }
 
 .nav-list .link:hover,
@@ -235,7 +235,7 @@ body {
 
 .hero-title {
   width: 696px;
-  color: var(--primary-white-color);
+  color: var(--primary-color-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -253,13 +253,13 @@ body {
   margin-top: 30px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color var(--transition-animation);
+  transition: background-color var(--typical-transition);
 
   /* разобраться почему такое значение? откуда наследует */
 }
 
 .hero .button-primary {
-  color: var(--primary-white-color);
+  color: var(--primary-color-white);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -276,13 +276,13 @@ body {
 }
 
 .benefits {
-  background-color: var(--primary-white-color);
+  background-color: var(--primary-color-white);
 }
 
 .benefits-list {
   display: flex;
   align-items: top;
-  gap: var(--typical-list-padding);
+  gap: var(--typical-padding-list);
   /* margin-right: 30px; */
   /* padding-top: 94px;
     padding-bottom: 94px; */
@@ -300,13 +300,13 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   padding-bottom: 10px;
-  color: var(--primary-text-color);
+  color: var(--text-color-primary);
 }
 
 .benefits-text {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-text-color);
+  color: var(--text-color-primary);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -316,14 +316,14 @@ body {
 }
 
 .benefits-icon {
-  transition: fill var(--transition-animation);
+  transition: fill var(--typical-transition);
 }
 
 .benefits-icon-wrap {
   display: flex;
   width: 270px;
   height: 120px;
-  background-color: var(--background-third-color);
+  background-color: var(--background-color-third);
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
@@ -331,7 +331,7 @@ body {
 }
 
 .work {
-  background-color: var(--primary-white-color);
+  background-color: var(--primary-color-white);
   padding-top: 0;
   /* margin-top: var(--typical-margin-padding); 
     как лучше - 2 паддинга в секции benefits или разделить по спкциям отступы?*/
@@ -340,7 +340,7 @@ body {
 .work-list {
   display: flex;
   align-items: center;
-  gap: var(--typical-list-padding);
+  gap: var(--typical-padding-list);
   flex-wrap: wrap;
 }
 
@@ -359,7 +359,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
-  color: var(--primary-white-color);
+  color: var(--primary-color-white);
   background-color: rgba(47, 48, 58, 0.8);
 }
 
@@ -375,22 +375,22 @@ body {
 }
 
 .team {
-  background-color: var(--background-third-color);
+  background-color: var(--background-color-third);
 }
 
 .team-title {
-  color: var(--primary-text-color);
+  color: var(--text-color-primary);
 }
 
 .team-list {
   display: flex;
   align-items: center;
-  gap: var(--typical-list-padding);
+  gap: var(--typical-padding-list);
   flex-wrap: wrap;
 }
 
 .team-item {
-  background-color: var(--primary-white-color);
+  background-color: var(--primary-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -398,12 +398,12 @@ body {
 }
 
 .team-subtitle {
-  color: var(--primary-text-color);
+  color: var(--text-color-primary);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding: var(--typical-list-padding) 0 10px;
+  padding: var(--typical-padding-list) 0 10px;
 }
 
 .team-text {
@@ -420,7 +420,7 @@ body {
   align-items: center;
   justify-content: center;
   column-gap: 10px;
-  padding-bottom: var(--typical-list-padding);
+  padding-bottom: var(--typical-padding-list);
 }
 
 .team-icon-wrap {
@@ -435,14 +435,14 @@ body {
 
 .team-icon-wrap:hover,
 .footer-social-link:hover {
-  fill: var(--primary-white-color);
+  fill: var(--primary-color-white);
   background-color: var(--accent-color);
-  transition: background-color var(--transition-animation),
-    fill var(--transition-animation);
+  transition: background-color var(--typical-transition),
+    fill var(--typical-transition);
 }
 
 .team-icon {
-  transition: color var(--transition-animation);
+  transition: color var(--typical-transition);
 }
 
 /* .team-icon-wrap:focus 
@@ -453,7 +453,7 @@ body {
 }
 .clients-list {
   display: flex;
-  gap: var(--typical-list-padding);
+  gap: var(--typical-padding-list);
 }
 .clients-item {
   display: flex;
@@ -462,7 +462,7 @@ body {
 }
 
 .clients-icon {
-  transition: color var(--transition-animation);
+  transition: color var(--typical-transition);
 }
 
 .clients-icon-link {
@@ -474,14 +474,14 @@ body {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   fill: #afb1b8;
-  transition: border-color var(--transition-animation),
-    fill var(--transition-animation);
+  transition: border-color var(--typical-transition),
+    fill var(--typical-transition);
 }
 
 .clients-icon-link:hover .clients-icon,
 .clients-icon-link:focus .clients-icon {
   fill: var(--accent-color);
-  transition: fill var(--transition-animation);
+  transition: fill var(--typical-transition);
 }
 
 .clients-icon-link:hover,
@@ -491,8 +491,8 @@ body {
 
 /* --------------FOOTER--------------- */
 .footer {
-  color: var(--primary-white-color);
-  background-color: var(--background-grey-color);
+  color: var(--primary-color-white);
+  background-color: var(--background-color-grey);
   text-align: left;
   font-style: normal;
   line-height: 1.71;
@@ -500,11 +500,11 @@ body {
 
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
-  background-color: var(--background-grey-color);
+  background-color: var(--background-color-grey);
   text-align: left;
   font-style: normal;
   line-height: 1.71;
-  transition: color var(--transition-animation);
+  transition: color var(--typical-transition);
 }
 
 .footer-container {
@@ -521,7 +521,7 @@ body {
   line-height: 1.19;
 }
 .footer span {
-  color: var(--primary-white-color);
+  color: var(--primary-color-white);
 }
 /* почему не наследуется белый цвет из footer для спан? */
 
@@ -580,7 +580,7 @@ body {
   border-radius: 50%;
   fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--transition-animation);
+  transition: background-color var(--typical-transition);
 }
 
 .footer-subscription {
@@ -588,7 +588,7 @@ body {
 }
 
 .footer-subscription-title {
-  color: var(--primary-white-color);
+  color: var(--primary-color-white);
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -613,8 +613,8 @@ body {
   border-radius: 4px;
   padding-left: 16px;
   background-color: transparent;
-  color: var(--primary-white-color);
-  transition: border-color var(--transition-animation);
+  color: var(--primary-color-white);
+  transition: border-color var(--typical-transition);
   outline: transparent; /*убирает внутреннюю черную линию в поле ввода */
 }
 .footer-subscription-input:hover {
@@ -639,14 +639,14 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
+  color: var(--primary-color-white);
 }
 
 .footer-subscription-button-icon {
   width: 24px;
   height: 24px;
   display: block;
-  fill: var(--primary-white-color);
+  fill: var(--primary-color-white);
 }
 
 /* --------------PORTFOLIO------------- */
@@ -655,8 +655,8 @@ body {
 } */
 
 .button-portfolio {
-  color: var(--primary-text-color);
-  background-color: var(--background-third-color);
+  color: var(--text-color-primary);
+  background-color: var(--background-color-third);
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -664,9 +664,9 @@ body {
   text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: color var(--transition-animation),
-    background-color var(--transition-animation),
-    box-shadow var(--transition-animation);
+  transition: color var(--typical-transition),
+    background-color var(--typical-transition),
+    box-shadow var(--typical-transition);
 }
 
 .button-portfolio:hover,
@@ -749,7 +749,7 @@ body {
 
 .portfolio-link {
   display: block;
-  transition: box-shadow var(--transition-animation);
+  transition: box-shadow var(--typical-transition);
 }
 
 .portfolio-link:hover {
@@ -771,9 +771,9 @@ body {
   left: 0;
 
   background-color: #00000033;
-  transition: transform var(--transition-animation);
-  transition: visibility var(--transition-animation),
-    opacity var(--transition-animation);
+  transition: transform var(--typical-transition);
+  transition: visibility var(--typical-transition),
+    opacity var(--typical-transition);
 }
 
 .backdrop.is-hidden {
@@ -826,7 +826,7 @@ body {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--primary-text-color);
+  color: var(--text-color-primary);
   margin-bottom: 12px;
 }
 
@@ -846,7 +846,7 @@ body {
   border-radius: 4px;
   padding-left: 42px;
   /* padding-right: 16px; */
-  transition: border-color var(--transition-animation);
+  transition: border-color var(--typical-transition);
   outline: none;
 }
 
@@ -859,8 +859,8 @@ body {
   position: absolute;
   left: 12px;
   bottom: 11px;
-  fill: var(--primary-text-color);
-  transition: fill var(--transition-animation);
+  fill: var(--text-color-primary);
+  transition: fill var(--typical-transition);
 }
 
 /* .order-form-input:hover + .order-form-icon {
@@ -876,7 +876,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  transition: border-color var(--transition-animation);
+  transition: border-color var(--typical-transition);
   margin-bottom: 20px;
   outline: none;
 }
@@ -903,7 +903,7 @@ body {
 }
 
 .checkbox-icon-wrap {
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid var(--text-color-primary);
   border-radius: 4px;
   width: 16px;
   height: 15px;
@@ -911,11 +911,11 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 7px;
-  transition: background-color var(--transition-animation);
+  transition: background-color var(--typical-transition);
 }
 
 .checkbox-icon {
-  fill: var(--primary-white-color);
+  fill: var(--primary-color-white);
 }
 
 .checkbox:checked + .checkbox-icon-wrap {
@@ -957,7 +957,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
+  color: var(--primary-color-white);
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;

@@ -1,68 +1,46 @@
 .subscription {
     margin-left: 93px;
-}
 
-.subscription__title {
-    color: var(--primary-white-color);
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    &__title {
+    @include font(700, 20px, 1.14, 0.03em);
     text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--primary-color-white);
 }
 
-.subscription__wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
 }
 
-.subscription__input {
-    display: flex;
-    justify-content: center;
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
-    border-radius: 4px;
-    padding-left: 16px;
-    background-color: transparent;
-    color: var(--primary-white-color);
-    transition: border-color var(--transition-animation);
-    outline: transparent;
-    /*убирает внутреннюю черную линию в поле ввода */
+    &__input {
+        display: flex;
+        justify-content: center;
+        width: 358px;
+        height: 50px;
+        padding-left: 16px;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+        border-radius: 4px;
+        outline: transparent;     /*убирает внутреннюю черную линию в поле ввода */
+
+        color: var(--primary-color-white);
+        background-color: transparent;
+        transition: border-color var(--typical-transition);
+        
+        &:hover {
+            border-color: var(--accent-color);
+            }
+    }
+
+    &__button-icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: var(--primary-color-white);
+    }
 }
 
-.subscription__input:hover {
-    border-color: var(--accent-color);
-}
-
-.subscription__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 200px;
-    padding: 10px 28px;
-    gap: 10px;
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--primary-white-color);
-}
-
-.subscription__button-icon {
-    width: 24px;
-    height: 24px;
-    display: block;
-    fill: var(--primary-white-color);
-}

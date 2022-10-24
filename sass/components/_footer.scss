@@ -1,0 +1,49 @@
+.footer {
+    // font-style: normal;
+    line-height: 1.71;
+    text-align: left;
+
+    color: var(--primary-color-white);
+    background-color: var(--background-color-grey);
+
+    &__container {
+            display: flex;
+            align-items: baseline;
+            padding: 60px 0;
+    }
+    
+    &__wrap {
+            margin-bottom: 9px;
+    }
+    
+    &__contacts {
+            // font-style: normal;
+            // line-height: 1.71;
+            margin-top: 20px;
+    }
+    
+    &__address-text {
+            width: 231px;
+            margin-right: 70px;
+            margin-bottom: 9px;
+    }
+    
+    &__item:not(:last-child) {
+            margin-bottom: 9px;
+    }
+    
+    &__link {
+            text-align: left;
+            // line-height: 1.71;
+            // font-style: normal;
+            color: rgba(255, 255, 255, 0.6);
+            background-color: var(--background-color-grey);
+            transition: color var(--typical-transition);
+    
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+                // fill: var(--accent-color);
+            }
+        }
+}
